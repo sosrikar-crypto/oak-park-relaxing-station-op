@@ -1,47 +1,553 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Oak Park Relaxing Station | Massage in Oak Park, CA</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet"/>
-<style>*{margin:0;padding:0;box-sizing:border-box;}body{background:#0d0d0d;color:#f0f0f0;font-family:system-ui,sans-serif;-webkit-font-smoothing:antialiased;}a{color:inherit;text-decoration:none;}
-.nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:24px 48px;background:linear-gradient(to bottom,rgba(0,0,0,0.7),transparent);}
-.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;letter-spacing:0.05em;}.nav-links{display:flex;gap:32px;}.nav-links a{font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.75);}
-.hero{position:relative;height:100vh;min-height:600px;display:flex;align-items:flex-end;padding:0 48px 80px;overflow:hidden;}
-.hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1600&q=80&fit=crop') center/cover;transform:scale(1.05);}.hero-overlay{position:absolute;inset:0;background:rgba(3,10,6,0.60);}
-.hero-content{position:relative;z-index:2;max-width:700px;}
-.eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:20px;}.eyebrow-line{width:40px;height:1px;background:#a8c5a0;}.eyebrow-text{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:#a8c5a0;}
-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,6vw,5.5rem);font-weight:400;line-height:1.05;color:#fff;margin-bottom:20px;}
-.sub{font-size:1rem;color:rgba(255,255,255,0.7);line-height:1.6;margin-bottom:36px;max-width:480px;}
-.btn-row{display:flex;gap:16px;}.btn-p{background:#a8c5a0;color:#000;font-size:0.7rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;padding:16px 32px;}
-.btn-o{border:1px solid rgba(255,255,255,0.4);color:#fff;font-size:0.7rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;padding:16px 32px;}
-.section{padding:100px 48px;}.section-label{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:#a8c5a0;margin-bottom:16px;}
-.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:400;color:#f0f0f0;margin-bottom:24px;}
-.divider{height:1px;background:#1e1e1e;}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2px;margin-top:60px;}
-.card{background:#161616;border:1px solid #2a2a2a;padding:32px 28px;}.card-line{width:32px;height:2px;background:#a8c5a0;margin-bottom:20px;}
-.card h3{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:#f0f0f0;margin-bottom:12px;}.card p{font-size:0.875rem;color:#999;line-height:1.6;}
-.contact-section{padding:100px 48px;background:#111;}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;}
-.contact-info p{font-size:0.95rem;color:#999;line-height:2;margin-top:24px;}.contact-info strong{color:#f0f0f0;}
-footer{padding:40px 48px;border-top:1px solid #1e1e1e;display:flex;justify-content:space-between;align-items:center;}
-footer .logo{font-family:'Cormorant Garamond',serif;font-size:1rem;color:#999;}footer .copy{font-size:0.75rem;color:#555;}
-@media(max-width:768px){.nav{padding:20px 24px;}.nav-links{display:none;}.hero{padding:0 24px 60px;}.section{padding:60px 24px;}.contact-grid{grid-template-columns:1fr;}footer{padding:24px;flex-direction:column;gap:8px;}}
-</style></head><body>
-<nav class="nav"><div class="nav-logo">Oak Park Relaxing Station</div><div class="nav-links"><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div></nav>
-<section class="hero"><div class="hero-bg" id="heroBg"></div><div class="hero-overlay"></div>
-<div class="hero-content"><div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-text">Massage &mdash; Oak Park, CA</span></div>
-<h1>Oak Park Relaxing Station</h1><p class="sub">Relax. Restore. Recharge. Your Oak Park wellness sanctuary.</p>
-<div class="btn-row"><a href="#contact" class="btn-p">Get in Touch</a><a href="#services" class="btn-o">Our Services</a></div></div></section>
-<div class="divider"></div>
-<section class="section" id="services"><div class="section-label">What We Do</div><div class="section-title">Our Services</div>
-<div class="grid">
-<div class="card"><div class="card-line"></div><h3>Quality Massage</h3><p>Professional services tailored to your needs, every time.</p></div>
-<div class="card"><div class="card-line"></div><h3>Expert Team</h3><p>Experienced professionals dedicated to excellence.</p></div>
-<div class="card"><div class="card-line"></div><h3>Local &amp; Trusted</h3><p>Proudly serving Oak Park. Your neighbors, your team.</p></div>
-<div class="card"><div class="card-line"></div><h3>Easy to Reach</h3><p>Call or stop by — we make it simple to get started.</p></div>
-</div></section>
-<div class="divider"></div>
-<section class="contact-section" id="contact"><div class="contact-grid">
-<div><div class="section-label">Get In Touch</div><div class="section-title">Come See Us</div>
-<p style="color:#999;line-height:1.7;">We'd love to hear from you. Stop by, give us a call, or send us a message.</p></div>
-<div class="contact-info"><p><strong>Address</strong><br/>Oak Park, CA 91377<br/><br/><strong>Phone</strong><br/>(818) 877-0000<br/><br/><strong>Hours</strong><br/>Mon-Fri: 9am-6pm<br/>Sat: 10am-4pm<br/>Sun: Closed</p></div>
-</div></section>
-<footer><div class="logo">Oak Park Relaxing Station</div><div class="copy">&copy; 2026 Oak Park Relaxing Station - Oak Park, CA</div></footer>
-<script>const bg=document.getElementById('heroBg');window.addEventListener('scroll',()=>{if(bg)bg.style.transform='scale(1.05) translateY('+(window.scrollY*0.3)+'px)';},{passive:true});</script>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Oak Park Relaxing Station | Massage Therapy in Oak Park, CA</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --gold: #b89a6e;
+  --gold-light: #d4b896;
+  --dark: #080808;
+  --dark2: #0f0f0f;
+  --dark3: #161616;
+  --text: #e8e0d5;
+  --muted: #8a8070;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body { background: var(--dark); color: var(--text); font-family: 'Jost', sans-serif; font-weight:300; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+
+/* NAV */
+nav {
+  position: fixed; top:0; left:0; right:0; z-index:100;
+  display: flex; align-items:center; justify-content:space-between;
+  padding: 28px 60px;
+  transition: all 0.4s ease;
+}
+nav.scrolled { background: rgba(8,8,8,0.95); backdrop-filter: blur(12px); padding: 18px 60px; border-bottom: 1px solid rgba(184,154,110,0.15); }
+.nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; letter-spacing: 0.12em; color: var(--gold-light); }
+.nav-links { display: flex; gap: 36px; align-items:center; }
+.nav-links a { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(232,224,213,0.65); transition: color 0.3s; }
+.nav-links a:hover { color: var(--gold-light); }
+.nav-book { background: var(--gold); color: #000 !important; padding: 10px 24px; font-weight:500; transition: background 0.3s !important; }
+.nav-book:hover { background: var(--gold-light) !important; }
+
+/* HERO */
+.hero {
+  position: relative; height: 100vh; min-height: 700px;
+  display: flex; align-items: center;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background: url('https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=1800&q=85&fit=crop') center/cover;
+  transform: scale(1.08);
+  transition: transform 0.1s linear;
+}
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(105deg, rgba(8,8,8,0.85) 40%, rgba(8,8,8,0.4) 100%);
+}
+.hero-content {
+  position: relative; z-index:2;
+  padding: 0 60px;
+  max-width: 680px;
+}
+.hero-tag {
+  display: inline-flex; align-items:center; gap:12px;
+  margin-bottom: 28px;
+}
+.hero-tag-line { width:36px; height:1px; background: var(--gold); }
+.hero-tag span { font-size:0.65rem; letter-spacing:0.25em; text-transform:uppercase; color: var(--gold); }
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
+  font-weight: 300;
+  line-height: 1.0;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.hero h1 em { font-style: italic; color: var(--gold-light); }
+.hero-sub {
+  font-size: 1rem;
+  color: rgba(232,224,213,0.65);
+  line-height: 1.7;
+  margin: 24px 0 40px;
+  max-width: 440px;
+}
+.hero-rating {
+  display: flex; align-items:center; gap:10px;
+  margin-bottom: 40px;
+}
+.stars { color: var(--gold); font-size: 0.9rem; letter-spacing:2px; }
+.rating-text { font-size: 0.75rem; color: var(--muted); letter-spacing:0.05em; }
+.hero-btns { display:flex; gap:16px; flex-wrap:wrap; }
+.btn-primary {
+  background: var(--gold);
+  color: #000;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 16px 36px;
+  transition: background 0.3s, transform 0.2s;
+  display: inline-block;
+}
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+.btn-ghost {
+  border: 1px solid rgba(232,224,213,0.3);
+  color: var(--text);
+  font-family: 'Jost', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 16px 36px;
+  transition: border-color 0.3s, transform 0.2s;
+}
+.btn-ghost:hover { border-color: var(--gold); color: var(--gold-light); transform: translateY(-1px); }
+
+/* MARQUEE STRIP */
+.strip {
+  background: var(--gold);
+  padding: 14px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.strip-inner {
+  display: inline-block;
+  animation: marquee 22s linear infinite;
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 500;
+}
+@keyframes marquee { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+
+/* SERVICES */
+.services { padding: 120px 60px; background: var(--dark); }
+.section-header { margin-bottom: 70px; }
+.section-tag {
+  font-size: 0.62rem; letter-spacing:0.28em; text-transform:uppercase;
+  color: var(--gold); margin-bottom: 16px; display:flex; align-items:center; gap:10px;
+}
+.section-tag::before { content:''; width:28px; height:1px; background:var(--gold); }
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.4rem, 4vw, 3.8rem);
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.1;
+}
+.section-title em { font-style:italic; color: var(--gold-light); }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+.service-card {
+  background: var(--dark3);
+  border: 1px solid #1e1e1e;
+  padding: 44px 36px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s, transform 0.3s;
+  cursor: default;
+}
+.service-card::before {
+  content:'';
+  position:absolute; top:0; left:0; right:0; height:2px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+.service-card:hover { border-color: rgba(184,154,110,0.3); transform: translateY(-4px); }
+.service-card:hover::before { transform: scaleX(1); }
+.service-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.5rem;
+  color: rgba(184,154,110,0.12);
+  line-height:1;
+  margin-bottom: 16px;
+  font-weight:300;
+}
+.service-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.service-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.7; margin-bottom: 20px; }
+.service-price { font-size: 0.72rem; color: var(--gold); letter-spacing: 0.1em; }
+
+/* BOOK SECTION */
+.book-section {
+  padding: 120px 60px;
+  background: var(--dark2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+.book-image {
+  position: relative;
+  height: 560px;
+  overflow: hidden;
+}
+.book-image img {
+  width:100%; height:100%; object-fit:cover;
+  filter: brightness(0.85);
+}
+.book-image-tag {
+  position:absolute; bottom:28px; left:28px;
+  background: var(--gold);
+  color: #000;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  font-weight:500;
+}
+.book-content .section-tag { margin-bottom:12px; }
+.book-content p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 24px 0 40px;
+  max-width: 400px;
+}
+.book-options { display:flex; flex-direction:column; gap:16px; margin-bottom:40px; }
+.book-option {
+  display: flex; align-items:center; gap:16px;
+  padding: 20px 24px;
+  border: 1px solid #1e1e1e;
+  background: var(--dark3);
+  transition: border-color 0.3s;
+}
+.book-option:hover { border-color: rgba(184,154,110,0.4); }
+.book-option-icon { font-size: 1.3rem; }
+.book-option-text strong {
+  display:block;
+  font-size: 0.8rem;
+  font-weight:500;
+  color: #fff;
+  letter-spacing:0.05em;
+  margin-bottom:3px;
+}
+.book-option-text span { font-size: 0.72rem; color: var(--muted); }
+
+/* HOURS STRIP */
+.hours-strip {
+  background: var(--dark3);
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+.hours-item {}
+.hours-day { font-size: 0.62rem; letter-spacing:0.2em; text-transform:uppercase; color: var(--muted); margin-bottom:10px; }
+.hours-time { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--gold-light); font-weight:400; }
+
+/* REVIEWS */
+.reviews { padding: 120px 60px; background: var(--dark); }
+.reviews-grid { display:grid; grid-template-columns: repeat(3,1fr); gap: 2px; margin-top:60px; }
+.review-card {
+  background: var(--dark3);
+  border: 1px solid #1e1e1e;
+  padding: 36px 32px;
+}
+.review-stars { color: var(--gold); font-size: 0.75rem; letter-spacing:3px; margin-bottom:18px; }
+.review-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: rgba(232,224,213,0.85);
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+.review-author { font-size: 0.68rem; letter-spacing:0.15em; text-transform:uppercase; color: var(--muted); }
+
+/* LOCATION */
+.location {
+  padding: 120px 60px;
+  background: var(--dark2);
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items:center;
+}
+.location-map {
+  height: 420px;
+  background: #111;
+  border: 1px solid #1e1e1e;
+  overflow:hidden;
+  position:relative;
+}
+.location-map iframe { width:100%; height:100%; border:0; filter: grayscale(100%) invert(92%) contrast(90%); }
+.location-details p { font-size:0.9rem; color:var(--muted); line-height:2.2; margin-top:28px; }
+.location-details strong { color: var(--text); font-weight:400; }
+.location-cta { margin-top:40px; }
+
+/* FOOTER */
+footer {
+  padding: 48px 60px;
+  border-top: 1px solid #161616;
+  display:flex; justify-content:space-between; align-items:center;
+}
+.footer-logo { font-family:'Cormorant Garamond',serif; font-size:1.1rem; color:var(--muted); letter-spacing:0.1em; }
+.footer-info { font-size:0.72rem; color:var(--muted); text-align:right; line-height:1.8; }
+
+/* RESPONSIVE */
+@media(max-width:900px) {
+  nav { padding:20px 24px; } nav.scrolled{padding:14px 24px;}
+  .nav-links{display:none;}
+  .hero-content{padding:0 24px;}
+  .hero h1{font-size:3rem;}
+  .services{padding:80px 24px;}
+  .services-grid{grid-template-columns:1fr;}
+  .book-section{padding:80px 24px; grid-template-columns:1fr; gap:48px;}
+  .book-image{height:320px;}
+  .hours-strip{padding:40px 24px; grid-template-columns:repeat(2,1fr);}
+  .reviews{padding:80px 24px;}
+  .reviews-grid{grid-template-columns:1fr;}
+  .location{padding:80px 24px; grid-template-columns:1fr;}
+  .location-map{height:280px;}
+  footer{padding:32px 24px; flex-direction:column; gap:12px; text-align:center;}
+  .footer-info{text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">Oak Park Relaxing Station</div>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#booking">Book</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#location">Location</a>
+    <a href="tel:+18188770000" class="nav-book">Call to Book</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-tag">
+      <div class="hero-tag-line"></div>
+      <span>Massage Therapy &mdash; Oak Park, CA</span>
+    </div>
+    <h1>Your <em>sanctuary</em><br/>of calm.</h1>
+    <div class="hero-rating">
+      <span class="stars">★★★★★</span>
+      <span class="rating-text">4.6 Stars &nbsp;·&nbsp; 21 Google Reviews &nbsp;·&nbsp; Oak Park's Favorite</span>
+    </div>
+    <p class="hero-sub">Full body massages, foot reflexology, and deep tissue therapy — every day, 10am to 10pm. Walk-ins welcome.</p>
+    <div class="hero-btns">
+      <a href="tel:+18188770000" class="btn-primary">📞 Call to Book — (818) 877-0000</a>
+      <a href="#services" class="btn-ghost">View Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="strip-inner">
+    &nbsp;&nbsp;&nbsp;✦ FOOT MASSAGE &nbsp;&nbsp;&nbsp;✦ FULL BODY MASSAGE &nbsp;&nbsp;&nbsp;✦ DEEP TISSUE &nbsp;&nbsp;&nbsp;✦ OPEN 7 DAYS &nbsp;&nbsp;&nbsp;✦ WALK-INS WELCOME &nbsp;&nbsp;&nbsp;✦ OAK PARK, CA &nbsp;&nbsp;&nbsp;✦ 10AM–10PM DAILY &nbsp;&nbsp;&nbsp;✦ FOOT MASSAGE &nbsp;&nbsp;&nbsp;✦ FULL BODY MASSAGE &nbsp;&nbsp;&nbsp;✦ DEEP TISSUE &nbsp;&nbsp;&nbsp;✦ OPEN 7 DAYS &nbsp;&nbsp;&nbsp;✦ WALK-INS WELCOME &nbsp;&nbsp;&nbsp;✦ OAK PARK, CA &nbsp;&nbsp;&nbsp;✦ 10AM–10PM DAILY &nbsp;&nbsp;&nbsp;
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-header">
+    <div class="section-tag">What We Offer</div>
+    <div class="section-title">Treatments <em>crafted</em><br/>for your wellbeing.</div>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <div class="service-name">Foot Reflexology</div>
+      <div class="service-desc">Our signature foot massage targeting pressure points to release tension throughout your entire body. Deeply restorative.</div>
+      <div class="service-price">30 min &nbsp;·&nbsp; 60 min &nbsp;·&nbsp; 90 min</div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <div class="service-name">Full Body Massage</div>
+      <div class="service-desc">A head-to-toe Swedish massage to melt away stress and improve circulation. Done fully clothed for your comfort.</div>
+      <div class="service-price">60 min &nbsp;·&nbsp; 90 min</div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">03</div>
+      <div class="service-name">Deep Tissue Therapy</div>
+      <div class="service-desc">Targeted pressure on chronic muscle tension and knots. Ideal for athletes, desk workers, or anyone carrying stress.</div>
+      <div class="service-price">60 min &nbsp;·&nbsp; 90 min</div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">04</div>
+      <div class="service-name">Couples Massage</div>
+      <div class="service-desc">Experience relaxation together. Side-by-side massages in our private suite — perfect for a date or special occasion.</div>
+      <div class="service-price">60 min &nbsp;·&nbsp; 90 min</div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">05</div>
+      <div class="service-name">Back & Shoulder</div>
+      <div class="service-desc">Focused relief for the upper body — neck, shoulders, and upper back. Great for a quick mid-week reset.</div>
+      <div class="service-price">30 min &nbsp;·&nbsp; 45 min</div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">06</div>
+      <div class="service-name">Hot Stone Add-On</div>
+      <div class="service-desc">Warm basalt stones placed along the spine and shoulders to deepen relaxation and ease muscle tension.</div>
+      <div class="service-price">Add to any service</div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK -->
+<section class="book-section" id="booking">
+  <div class="book-image">
+    <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=900&q=85&fit=crop" alt="Relaxing massage"/>
+    <div class="book-image-tag">Walk-Ins Welcome</div>
+  </div>
+  <div class="book-content">
+    <div class="section-tag">Reservations</div>
+    <div class="section-title">Ready to <em>unwind?</em></div>
+    <p>Booking is easy — just give us a call. We're open 7 days a week from 10am to 10pm, and we always accommodate walk-ins when available.</p>
+    <div class="book-options">
+      <a href="tel:+18188770000" class="book-option">
+        <div class="book-option-icon">📞</div>
+        <div class="book-option-text">
+          <strong>Call to Reserve</strong>
+          <span>(818) 877-0000 &nbsp;·&nbsp; Fastest way to book</span>
+        </div>
+      </a>
+      <a href="sms:+18188770000" class="book-option">
+        <div class="book-option-icon">💬</div>
+        <div class="book-option-text">
+          <strong>Text Us</strong>
+          <span>(818) 877-0000 &nbsp;·&nbsp; We'll confirm within minutes</span>
+        </div>
+      </a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=646+Lindero+Canyon+Rd+Oak+Park+CA+91377" target="_blank" class="book-option">
+        <div class="book-option-icon">📍</div>
+        <div class="book-option-text">
+          <strong>Walk In</strong>
+          <span>646 Lindero Canyon Rd, Oak Park &nbsp;·&nbsp; Get Directions</span>
+        </div>
+      </a>
+    </div>
+    <a href="tel:+18188770000" class="btn-primary">Book Your Session Now</a>
+  </div>
+</section>
+
+<!-- HOURS -->
+<div class="hours-strip">
+  <div class="hours-item">
+    <div class="hours-day">Monday – Friday</div>
+    <div class="hours-time">10am – 10pm</div>
+  </div>
+  <div class="hours-item">
+    <div class="hours-day">Saturday</div>
+    <div class="hours-time">10am – 10pm</div>
+  </div>
+  <div class="hours-item">
+    <div class="hours-day">Sunday</div>
+    <div class="hours-time">10am – 10pm</div>
+  </div>
+  <div class="hours-item">
+    <div class="hours-day">Walk-Ins</div>
+    <div class="hours-time">Always Welcome</div>
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="section-header">
+    <div class="section-tag">Google Reviews</div>
+    <div class="section-title">What Oak Park <em>locals</em> are saying.</div>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">"It is indeed a relaxing station. I got a full body massage here — the technique was great, very focused. This is my go-to spot in Oak Park."</div>
+      <div class="review-author">Google Review &nbsp;·&nbsp; Oak Park, CA</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">"Yes, we all love massages. I'd drive miles for a good one. This place was exactly what I hoped for — professional, calm, and genuinely relaxing."</div>
+      <div class="review-author">Google Review &nbsp;·&nbsp; Oak Park, CA</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">"We go there for their amazing foot massages. They also do body massages with clothes on. Highly recommend for anyone needing a proper reset."</div>
+      <div class="review-author">Google Review &nbsp;·&nbsp; Oak Park, CA</div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location" id="location">
+  <div class="location-map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.5!2d-118.764!3d34.175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x81f40c9b2b4041b8!2sOak%20Park%20Relaxing%20Station!5e0!3m2!1sen!2sus!4v1"
+      allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+  <div class="location-details">
+    <div class="section-tag">Find Us</div>
+    <div class="section-title">Come <em>visit</em> us.</div>
+    <p>
+      <strong>Address</strong><br/>
+      646 Lindero Canyon Rd<br/>
+      Oak Park, CA 91377<br/><br/>
+      <strong>Phone</strong><br/>
+      (818) 877-0000<br/><br/>
+      <strong>Hours</strong><br/>
+      Open Every Day &nbsp;·&nbsp; 10:00 AM – 10:00 PM<br/><br/>
+      <strong>Parking</strong><br/>
+      Free parking available on-site
+    </p>
+    <div class="location-cta">
+      <a href="https://www.google.com/maps/dir/?api=1&destination=646+Lindero+Canyon+Rd+Oak+Park+CA+91377" target="_blank" class="btn-primary">Get Directions</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Oak Park Relaxing Station</div>
+  <div class="footer-info">
+    646 Lindero Canyon Rd, Oak Park, CA 91377<br/>
+    (818) 877-0000 &nbsp;·&nbsp; Open Daily 10am – 10pm
+  </div>
+</footer>
+
+<script>
+// Parallax
+const heroBg = document.getElementById('heroBg');
+window.addEventListener('scroll', () => {
+  if(heroBg) heroBg.style.transform = 'scale(1.08) translateY(' + (window.scrollY * 0.25) + 'px)';
+}, {passive: true});
+
+// Nav scroll effect
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+}, {passive: true});
+</script>
+
+</body>
+</html>
